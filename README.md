@@ -16,7 +16,7 @@ It is inspired from the open API specification.
 
 Technological industries are more and more subject to compliance with data protection laws all over the world requiring companies to be compliant and to be able to demonstrate their compliance. In particular, the GDPR requires companies to maintain records of processing activities (ROPA) that is a general reflection of the company’s processings. 
 
-**We believe that RoPA are the cornerstone of the data protection process**. 
+**We believe that ROPA are the cornerstone of the data protection process**. 
 
  
 
