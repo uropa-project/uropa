@@ -54,7 +54,7 @@ With Uropa, you get the best of both worlds (🎤🎶), IT and legal, to serve y
 
 Uropa is made of JSON only. No other technology is required to use this protocol. 
 
-You’ll find all the useful documentation at this url : https://gdpr.stoplight.io/docs/uropa/branches/main/c2NoOjQ1ODgxNzk2-processing-record
+You’ll find all the useful documentation at this url : https://gdpr.stoplight.io/docs/uropa/c2NoOjU1NjI5MTMz-processing-record
 
 All of the objects composing the processing record in its all are detailed in this documentation. 
 
