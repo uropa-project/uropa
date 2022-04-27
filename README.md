@@ -31,8 +31,8 @@ Uropa is meant to be used by persons editing data processing records. These pers
 
 
 
-* A techy/geek DPOs (Data protection officers, more often known as “Mr or Mrs GDPR ” within your team, wanting to document its processing activities directly in JSON (these are THE guys 👍)
-* CTO’s in charge of GDPR (or copy-cat like laws) compliance (we love you too ❤️)
+* A techy/geek DPO (Data protection officers, more often known as “Mr or Mrs GDPR ” within your team, wanting to document its processing activities directly in JSON (these are THE guys 👍)
+* CTOs in charge of GDPR (or copy-cat like laws) compliance (we love you too ❤️)
 * Developers working on a solution to help companies maintain their compliance documentation (there a lot of them, yes we see you 👀).
 
 Depending on who you are, Uropa is going to be used in different manners. 
