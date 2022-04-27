@@ -1,0 +1,33 @@
+{
+  "title": "SecurityMeasure",
+  "type": "object",
+  "description": "Description of the security measure applying to the processing",
+  "examples": [],
+  "properties": {
+    "name": {
+      "type": "string",
+      "example": "Reverse proxy",
+      "description": "the name of the security measure"
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the security measure",
+      "example": "DDOS mitigation technical asset"
+    },
+    "securityMeasureType": {
+      "type": "string",
+      "example": "technical",
+      "enum": [
+        "technical",
+        "organizational",
+        "physical"
+      ],
+      "description": "the type of security measure (technical, organizational or physical)"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "securityMeasureType"
+  ]
+}

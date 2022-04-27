@@ -1,0 +1,21 @@
+{
+  "title": "Country",
+  "type": "object",
+  "examples": [],
+  "description": "The complete description of a country (ex: postal address, country where is located the transfer recipient)",
+  "properties": {
+    "name": {
+      "type": "string",
+      "example": "France",
+      "description": "The complete name of the country"
+    },
+    "iso": {
+      "type": "string",
+      "example": "FRA",
+      "description": "The ISO 3166-1 Alpha-3 Code of the Country"
+    }
+  },
+  "required": [
+    "iso"
+  ]
+}

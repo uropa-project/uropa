@@ -1,0 +1,35 @@
+{
+  "title": "PersonalInformation",
+  "type": "object",
+  "description": "Informations about a physical person.",
+  "examples": [],
+  "x-internal": true,
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "example": "John",
+      "description": "The first name of the person"
+    },
+    "lastName": {
+      "type": "string",
+      "example": "Doe",
+      "description": "The last name of the person"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "example": "+33 6 11 44 66 96",
+      "description": "The phone number of the person"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "example": "john.doe@amamail.com",
+      "description": "The email of the person"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "email"
+  ]
+}

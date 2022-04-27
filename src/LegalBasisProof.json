@@ -1,0 +1,18 @@
+{
+  "title": "LegalBasisProof",
+  "type": "object",
+  "description": "Description of the legal basis through evenements triggering the beggining of the validity of the legal basis and the end of the validity of the legal basis",
+  "examples": [],
+  "properties": {
+    "startValidityEventType": {
+      "$ref": "./EventType.json"
+    },
+    "stopValidityEventType": {
+      "$ref": "./EventType.json"
+    }
+  },
+  "required": [
+    "startValidityEventType",
+    "stopValidityEventType"
+  ]
+}

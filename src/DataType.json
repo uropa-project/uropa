@@ -1,0 +1,45 @@
+{
+  "title": "DataType",
+  "type": "object",
+  "description": "A DataType is the most precise categorization of a data (example : email).",
+  "properties": {
+    "name": {
+      "type": "string",
+      "example": "firstname",
+      "description": "The name of the DataType"
+    },
+    "isOptional": {
+      "type": "boolean",
+      "description": "True if it's not required by the Purpose, False otherwise"
+    },
+    "collectionMean": {
+      "type": "string",
+      "enum": [
+        "generated",
+        "computed",
+        "submitted"
+      ],
+      "description": "How the DataType was collected"
+    },
+    "dataLocations": {
+      "type": "array",
+      "description": "Where the DataType can be found",
+      "items": {
+        "$ref": "./DataLocation.json"
+      }
+    },
+    "dataSubjectCategories": {
+      "type": "array",
+      "description": "The DataSubjectCategory concerned by this DataType",
+      "items": {
+        "$ref": "./DataSubjectCategory.json"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "isOptional",
+    "dataLocations",
+    "dataSubjectCategories"
+  ]
+}

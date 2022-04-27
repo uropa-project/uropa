@@ -1,0 +1,24 @@
+{
+  "title": "DataProcessor",
+  "type": "object",
+  "description": "Information about the data processor that is a recipient of the data processed. Useful to manage authorisations, contracts and other legal instruments.",
+  "properties": {
+    "legalPerson": {
+      "$ref": "./LegalPerson.json"
+    },
+    "dataCategoriesDisclosed": {
+      "type": "array",
+      "description": "A description of the data categories disclosed to the recipient",
+      "items": {
+        "$ref": "./DataCategory.json"
+      }
+    },
+    "processorAgreementPath": {
+      "type": "string",
+      "description": "The path to the binding agreemend signed with the processor"
+    }
+  },
+  "required": [
+    "legalPerson"
+  ]
+}

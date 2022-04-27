@@ -1,0 +1,24 @@
+{
+  "title": "StorageDurationRule",
+  "type": "object",
+  "description": "Describes the events defining the storage duration rule (events determining the beginning and the end of the processing). For instance, the consent legal basis would be triggered by the start event \"GiveConsent\" and be ended by the stop event \"RevokeConsent\"",
+  "properties": {
+    "startEventType": {
+      "$ref": "./EventType.json"
+    },
+    "stopEventType": {
+      "$ref": "./EventType.json"
+    },
+    "nextStopEventTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "./EventType.json"
+      }
+    }
+  },
+  "required": [
+    "startEventType",
+    "stopEventType",
+    "nextStopEventTypes"
+  ]
+}

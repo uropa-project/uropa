@@ -1,0 +1,32 @@
+{
+  "title": "ExternalOrganization",
+  "type": "object",
+  "description": "Information about the external organization that is a recipient of the data processed. Useful to manage authorisations, contracts and other legal instruments.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "name of the organization",
+      "example": "San Francisco branch of CODE IS LAW"
+    },
+    "organizationStatus": {
+      "type": "string",
+      "example": "affiliate",
+      "description": "Provides the status of the external organization regarding the controller"
+    },
+    "legalPerson": {
+      "$ref": "./LegalPerson.json"
+    },
+    "dataCategoriesDisclosed": {
+      "type": "array",
+      "description": "A description of the data categories disclosed to the recipient",
+      "items": {
+        "$ref": "./DataCategory.json"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "organizationStatus",
+    "legalPerson"
+  ]
+}

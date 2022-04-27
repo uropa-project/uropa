@@ -1,0 +1,39 @@
+{
+  "title": "LegalBasis",
+  "type": "object",
+  "description": "reference to the reason in the law (e.g. the GDPR) that provides the basis for acting in a particular manner in regards to PersonalData",
+  "examples": [],
+  "properties": {
+    "legalBasisType": {
+      "type": "string",
+      "enum": [
+        "consent",
+        "contract",
+        "legal obligation",
+        "vital interest",
+        "public interest task",
+        "legitimate interest"
+      ],
+      "description": "Specifies the legal basis type on which the processing relies"
+    },
+    "legalBasisDescription": {
+      "type": "string",
+      "example": "Article L323-2 du Code de commerce sur la conversation des documents comptables",
+      "description": "Provides a description of the legal basis (including any additional legal text to refer to)"
+    },
+    "proofUrl": {
+      "type": "string",
+      "description": "Link toward the legal basis of the processing",
+      "example": "https://www.proof.url",
+      "format": "uri"
+    },
+    "legalBasisProof": {
+      "$ref": "./LegalBasisProof.json"
+    }
+  },
+  "required": [
+    "legalBasisType",
+    "legalBasisDescription",
+    "legalBasisProof"
+  ]
+}

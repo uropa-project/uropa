@@ -1,0 +1,39 @@
+{
+  "title": "PostalAddress",
+  "type": "object",
+  "description": "Postal address information (ex: location of a legal person, contact postal address of CEO or DPO)",
+  "x-internal": true,
+  "properties": {
+    "address1": {
+      "type": "string",
+      "example": "100 rue des Etoiles",
+      "description": "The principal postal address"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "example": "Paris",
+      "description": "The name of the city in which the legal person is locaded"
+    },
+    "zipCode": {
+      "type": "string",
+      "example": "75001",
+      "description": "The zip code of the city in which the legal person is locaded"
+    },
+    "state": {
+      "type": "string",
+      "description": "The name of the city in which the legal person is locaded"
+    },
+    "country": {
+      "$ref": "./Country.json"
+    }
+  },
+  "required": [
+    "address1",
+    "city",
+    "zipCode",
+    "country"
+  ]
+}

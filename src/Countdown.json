@@ -1,0 +1,28 @@
+{
+  "title": "Countdown",
+  "type": "object",
+  "description": "Provides a countdown object in order to manage durations and trigger events",
+  "examples": [],
+  "properties": {
+    "timeUnit": {
+      "type": "string",
+      "enum": [
+        "years",
+        "months",
+        "weeks",
+        "days",
+        "hours"
+      ],
+      "description": "The time unit of the countdown (as the duration is an integer, chose the lowest time unit of the duration)"
+    },
+    "duration": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "description": "The duration related to the time unit"
+    }
+  },
+  "required": [
+    "timeUnit",
+    "duration"
+  ]
+}

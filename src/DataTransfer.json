@@ -1,0 +1,23 @@
+{
+  "title": "DataTransfer",
+  "type": "object",
+  "description": "Description of the data transfer including the country, the recipient (legal person) and the legal basis",
+  "properties": {
+    "description": {
+      "type": "string",
+      "example": "transfer operated in order to host the processed data",
+      "description": "Describes the transfer and its purpose"
+    },
+    "country": {
+      "$ref": "./Country.json"
+    },
+    "DataTransferLegalBasis": {
+      "$ref": "./DataTransferLegalBasis.json"
+    }
+  },
+  "required": [
+    "description",
+    "country",
+    "DataTransferLegalBasis"
+  ]
+}

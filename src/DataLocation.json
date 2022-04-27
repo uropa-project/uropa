@@ -1,0 +1,53 @@
+{
+  "description": "Place where a data item is stored within a DataSource. \n\nExample: \"/users/first_name\" in the \"database-44\"",
+  "type": "object",
+  "title": "DataLocation",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Provides a general description of the data location",
+      "example": "Shared VM hosted by OVH"
+    },
+    "dataSupport": {
+      "type": "string",
+      "enum": [
+        "physical",
+        "digital"
+      ],
+      "example": "digital",
+      "description": "Specifies whether the data is stored in a digital or physical support"
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "example": "/db/emailing-db/table/contacts/column/email",
+      "description": "Specifies the path to access where the data item is stored"
+    },
+    "storageState": {
+      "type": "string",
+      "enum": [
+        "production",
+        "legal",
+        "archives"
+      ],
+      "example": "production",
+      "description": "Provides information about the state of the storage"
+    },
+    "dataSource": {
+      "$ref": "./DataSource.json"
+    },
+    "storageDurationRules": {
+      "type": "array",
+      "items": {
+        "$ref": "./StorageDurationRule.json"
+      }
+    }
+  },
+  "required": [
+    "description",
+    "dataSupport",
+    "storageState",
+    "dataSource",
+    "storageDurationRules"
+  ]
+}

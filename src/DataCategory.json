@@ -1,0 +1,28 @@
+{
+  "title": "DataCategory",
+  "type": "object",
+  "description": "High-Level description of the personal data processed that is aggregation of related DataTypes. For instance, the name and the first name are dataTypes and identity information is the dataCategory",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the data Category"
+    },
+    "isSensitive": {
+      "type": "boolean",
+      "example": "normal",
+      "description": "Specifies whether the dataCategory contains sensitive data"
+    },
+    "dataTypes": {
+      "type": "array",
+      "description": "Description of the DataTypes related to the dataCategory",
+      "items": {
+        "$ref": "./DataType.json"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "isSensitive",
+    "dataTypes"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "DataTransferLegalBasis",
+  "type": "object",
+  "description": "classification that pertains to how an atomic piece of data must be treated in order to be compliant with GDPR",
+  "properties": {
+    "transferLegalBasisType": {
+      "type": "string",
+      "enum": [
+        "adequacy decision",
+        "appropriate safeguards",
+        "derogation"
+      ],
+      "example": "appropriate safeguards",
+      "description": "The type of legal basis used to transfer data outside the EU according to the GDPR"
+    },
+    "transferLegalBasisDescription": {
+      "type": "string",
+      "description": "Describes the legal basis of the transfer",
+      "example": "standard contractual clauses"
+    },
+    "proofUrl": {
+      "type": "string",
+      "description": "Links to the proof of the data transfer legal basis (url or internal path)",
+      "format": "uri",
+      "example": "https://ec.europa.eu/info/sites/default/files/decision_on_the_adequate_protection_of_personal_data_by_the_united_kingdom_-_general_data_protection_regulation_en.pdf"
+    },
+    "isConsent": {
+      "type": "boolean",
+      "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)"
+    },
+    "recipient": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "dataProcessor": {
+          "$ref": "./DataProcessor.json"
+        },
+        "externalOrganization": {
+          "$ref": "./ExternalOrganization.json"
+        },
+        "internalDepartment": {
+          "$ref": "./InternalDepartment.json"
+        }
+      }
+    }
+  },
+  "required": [
+    "transferLegalBasisType",
+    "transferLegalBasisDescription",
+    "isConsent",
+    "recipient"
+  ]
+}

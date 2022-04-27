@@ -1,0 +1,37 @@
+{
+  "title": "Purpose",
+  "type": "object",
+  "description": "The purpose of the processing describes what the reason why the controller processes the personal data\n\n(ex : Customer relationship management, Payroll management, Maintenance of medical records, Creditworthiness assessment)",
+  "examples": [],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the purpose"
+    },
+    "description": {
+      "type": "string",
+      "description": "Provides additional information on the purpose"
+    },
+    "isMain": {
+      "type": "boolean",
+      "description": "Specifies whether the purpose is the main purpose or an accessory purpose"
+    },
+    "legalBasis": {
+      "$ref": "./LegalBasis.json"
+    },
+    "dataCategories": {
+      "type": "array",
+      "description": "The dataCategories processed for the purpose of the processing",
+      "items": {
+        "$ref": "./DataCategory.json"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "isMain",
+    "legalBasis",
+    "dataCategories"
+  ]
+}

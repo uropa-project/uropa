@@ -1,0 +1,19 @@
+{
+  "title": "Ceo",
+  "type": "object",
+  "description": "The highest-ranking person of the LegalPerson",
+  "properties": {
+    "professionalTitle": {
+      "type": "string",
+      "example": "CEO",
+      "description": "The professional title of the CEO"
+    },
+    "personalInformation": {
+      "$ref": "./PersonalInformation.json"
+    }
+  },
+  "required": [
+    "professionalTitle",
+    "personalInformation"
+  ]
+}

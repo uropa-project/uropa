@@ -1,0 +1,101 @@
+{
+  "title": "ProcessingRecord",
+  "type": "object",
+  "description": "An inventory of the data processing according to article 30 GDPR. It must reflect the reality of the personal data processing, to keep track of the usage of personal data in the controller system.",
+  "examples": [],
+  "properties": {
+    "name": {
+      "example": "Gestion de la trésorerie",
+      "type": "string",
+      "description": "The name of the processing"
+    },
+    "internalId": {
+      "type": "string",
+      "description": "The reference of the processing record"
+    },
+    "updatedAt": {
+      "type": "string",
+      "description": "The date of the last update of the ProcessingRecord",
+      "format": "date-time"
+    },
+    "legalPerson": {
+      "$ref": "./LegalPerson.json"
+    },
+    "representative": {
+      "$ref": "./LegalPerson.json"
+    },
+    "jointControllers": {
+      "type": "array",
+      "description": "A JointController is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
+      "items": {
+        "$ref": "./JointController.json"
+      }
+    },
+    "purposes": {
+      "type": "array",
+      "description": "The purpose of the processing describes what the reason why the controller processes the personal data",
+      "items": {
+        "$ref": "./Purpose.json"
+      }
+    },
+    "recipents": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 3,
+      "description": "The recipients are the internal and external entities that have access to the personal data in the context of the processing",
+      "properties": {
+        "internalDepartments": {
+          "type": "array",
+          "description": "The list of InternalDepartments that process the personal data",
+          "items": {
+            "$ref": "./InternalDepartment.json"
+          }
+        },
+        "externalOrganisations": {
+          "type": "array",
+          "description": "The list of ExternalOrganisations that process the personal data",
+          "items": {
+            "$ref": "./ExternalOrganization.json"
+          }
+        },
+        "dataProcessors": {
+          "type": "array",
+          "description": "The list of DataProcessors that process the personal data",
+          "items": {
+            "$ref": "./DataProcessor.json"
+          }
+        }
+      }
+    },
+    "securityMeasures": {
+      "type": "array",
+      "description": "The list of the security measures adopted by the controller to ensure the confidentiality, integrity and availability of the processed personal data",
+      "items": {
+        "$ref": "./SecurityMeasure.json"
+      }
+    },
+    "dataTransfers": {
+      "type": "array",
+      "description": "Mandatory informations about data transfers outside the EU or to international organisations according to Chapter V GDPR",
+      "items": {
+        "$ref": "./DataTransfer.json"
+      }
+    },
+    "hasDPIA": {
+      "type": "boolean",
+      "description": "Specifies whether the processing record was subject to a data protection impact assessment or not according to article 35 GDPR"
+    },
+    "DPIAInfos": {
+      "$ref": "./DPIAInfos.json"
+    }
+  },
+  "required": [
+    "name",
+    "updatedAt",
+    "legalPerson",
+    "purposes",
+    "recipents",
+    "securityMeasures",
+    "hasDPIA"
+  ]
+}

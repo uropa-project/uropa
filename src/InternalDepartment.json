@@ -1,0 +1,22 @@
+{
+  "title": "InternalDepartment",
+  "type": "object",
+  "description": "Information about the internal department that is a recipient of the data processed. Useful to manage authorisation at the level of the organisation",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "name of the department",
+      "example": "marketing department"
+    },
+    "dataCategoriesDisclosed": {
+      "type": "array",
+      "description": "A description of the data categories disclosed to the recipient",
+      "items": {
+        "$ref": "./DataCategory.json"
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

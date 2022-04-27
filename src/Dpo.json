@@ -1,0 +1,18 @@
+{
+  "description": "The Data Protection Officer (DPO) of the legal person.",
+  "type": "object",
+  "title": "Dpo",
+  "properties": {
+    "personalInformation": {
+      "$ref": "./PersonalInformation.json"
+    },
+    "postalAddress": {
+      "$ref": "./PostalAddress.json"
+    }
+  },
+  "required": [
+    "personalInformation",
+    "postalAddress"
+  ],
+  "examples": []
+}
