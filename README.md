@@ -1,7 +1,7 @@
 # Uropa
 ## Universal Record Of Processing Activities
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/Welcome.png "Welcome image")
 
 
 
