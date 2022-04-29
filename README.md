@@ -66,7 +66,7 @@ If you want to participate in the project, or if you’re interested in making t
 
 # Who Uropa is made by ?
 
-Uropa is an open source project initially co-created by two french startups : Alias.dev and Leto.legal.
+Uropa is an open source project initially co-created by two french startups : [Alias.dev](https://www.alias.dev) and [Leto.legal](https://www.leto.legal/).
 
 
 # License
