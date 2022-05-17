@@ -1,0 +1,204 @@
+{
+  "description": "StorageDurationRule that comes from the ALIAS Storage Durations Knowledge Base.\n\nThis is not part of the database model, but it is the format in which we will consider the standard of storage duration rules coming from our knowledge base",
+  "x-stoplight": {
+    "id": "eb08defcada4e"
+  },
+  "type": "object",
+  "x-internal": true,
+  "title": "StandardStorageDurationRule",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "dataCategories": {
+      "type": "object",
+      "properties": {
+        "dataCategoryName": {
+          "type": "string"
+        },
+        "dataTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "dataCategoryName"
+      ]
+    },
+    "legalBasis": {
+      "type": "string"
+    },
+    "startEventType": {
+      "type": "object",
+      "properties": {
+        "eventTypeName": {
+          "type": "string"
+        },
+        "trigger": {
+          "type": "string",
+          "enum": [
+            "action",
+            "countdown"
+          ]
+        },
+        "countdown": {
+          "type": "object",
+          "properties": {
+            "hours": {
+              "type": "integer",
+              "example": 3
+            },
+            "days": {
+              "type": "integer",
+              "example": 3
+            },
+            "weeks": {
+              "type": "integer",
+              "example": 3
+            },
+            "months": {
+              "type": "integer",
+              "example": 3
+            },
+            "years": {
+              "type": "integer",
+              "example": 3
+            }
+          },
+          "required": [
+            "hours",
+            "days",
+            "weeks",
+            "months",
+            "years"
+          ]
+        }
+      },
+      "required": [
+        "eventTypeName"
+      ]
+    },
+    "stopEventType": {
+      "type": "object",
+      "properties": {
+        "eventTypeName": {
+          "type": "string"
+        },
+        "trigger": {
+          "type": "string",
+          "enum": [
+            "action",
+            "countdown"
+          ]
+        },
+        "countdown": {
+          "type": "object",
+          "properties": {
+            "hours": {
+              "type": "integer",
+              "example": 2
+            },
+            "days": {
+              "type": "integer",
+              "example": 2
+            },
+            "weeks": {
+              "type": "integer",
+              "example": 2
+            },
+            "months": {
+              "type": "integer",
+              "example": 3
+            },
+            "years": {
+              "type": "integer",
+              "example": 2
+            }
+          },
+          "required": [
+            "hours",
+            "days",
+            "weeks",
+            "months",
+            "years"
+          ]
+        }
+      },
+      "required": [
+        "eventTypeName",
+        "trigger"
+      ]
+    },
+    "nextStopEventTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "eventTypeName": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "countdown": {
+            "type": "object",
+            "properties": {
+              "hours": {
+                "type": "integer",
+                "example": 3
+              },
+              "days": {
+                "type": "integer",
+                "example": 3
+              },
+              "weeks": {
+                "type": "integer",
+                "example": 3
+              },
+              "months": {
+                "type": "integer",
+                "example": 3
+              },
+              "years": {
+                "type": "integer",
+                "example": 3
+              }
+            },
+            "required": [
+              "hours",
+              "days",
+              "weeks",
+              "months",
+              "years"
+            ]
+          }
+        },
+        "required": [
+          "eventTypeName",
+          "trigger"
+        ]
+      }
+    },
+    "document": {
+      "type": "string"
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "$ref": "./Country.json"
+      }
+    },
+    "dataControllerType": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "purpose",
+    "legalBasis"
+  ]
+}
