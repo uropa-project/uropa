@@ -164,6 +164,9 @@
     },
     "sectorName": {
       "type": "string"
+    },
+    "archiveType": {
+      "type": "string"
     }
   },
   "required": [
