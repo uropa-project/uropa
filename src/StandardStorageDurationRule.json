@@ -195,6 +195,9 @@
     },
     "dataControllerType": {
       "type": "string"
+    },
+    "sectorName": {
+      "type": "string"
     }
   },
   "required": [
