@@ -49,33 +49,16 @@
         "countdown": {
           "type": "object",
           "properties": {
-            "hours": {
+            "duration": {
               "type": "integer",
               "example": 3
             },
-            "days": {
-              "type": "integer",
-              "example": 3
-            },
-            "weeks": {
-              "type": "integer",
-              "example": 3
-            },
-            "months": {
-              "type": "integer",
-              "example": 3
-            },
-            "years": {
-              "type": "integer",
-              "example": 3
+            "timeUnit": {
+              "type": "string"
             }
           },
           "required": [
-            "hours",
-            "days",
-            "weeks",
-            "months",
-            "years"
+            "duration"
           ]
         }
       },
@@ -99,33 +82,16 @@
         "countdown": {
           "type": "object",
           "properties": {
-            "hours": {
+            "duration": {
               "type": "integer",
               "example": 2
             },
-            "days": {
-              "type": "integer",
-              "example": 2
-            },
-            "weeks": {
-              "type": "integer",
-              "example": 2
-            },
-            "months": {
-              "type": "integer",
-              "example": 3
-            },
-            "years": {
-              "type": "integer",
-              "example": 2
+            "timeUnit": {
+              "type": "string"
             }
           },
           "required": [
-            "hours",
-            "days",
-            "weeks",
-            "months",
-            "years"
+            "duration"
           ]
         }
       },
