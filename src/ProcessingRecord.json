@@ -81,10 +81,6 @@
         "$ref": "./DataTransfer.json"
       }
     },
-    "hasDPIA": {
-      "type": "boolean",
-      "description": "Specifies whether the processing record was subject to a data protection impact assessment or not according to article 35 GDPR"
-    },
     "DPIAInfos": {
       "$ref": "./DPIAInfos.json"
     }
@@ -95,7 +91,6 @@
     "legalPerson",
     "purposes",
     "recipents",
-    "securityMeasures",
-    "hasDPIA"
+    "securityMeasures"
   ]
 }
