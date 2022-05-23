@@ -27,7 +27,6 @@
   "required": [
     "name",
     "email",
-    "dpo",
     "ceo",
     "postalAddress"
   ]
