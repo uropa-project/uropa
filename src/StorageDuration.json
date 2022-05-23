@@ -6,6 +6,14 @@
   "type": "object",
   "description": "Describes the events defining the storage duration rule (events determining the beginning and the end of the processing). For instance, the consent legal basis would be triggered by the start event \"GiveConsent\" and be ended by the stop event \"RevokeConsent\"",
   "properties": {
+    "storageType": {
+      "type": "string",
+      "enum": [
+        "production",
+        "legal",
+        "archive"
+      ]
+    },
     "startEventType": {
       "$ref": "./EventType.json"
     },
