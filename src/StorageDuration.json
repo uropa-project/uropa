@@ -14,13 +14,13 @@
         "archive"
       ]
     },
-    "startEventType": {
+    "startEvent": {
       "$ref": "./EventType.json"
     },
-    "stopEventType": {
+    "mainStopEvent": {
       "$ref": "./EventType.json"
     },
-    "nextStopEventTypes": {
+    "nextStopEvents": {
       "type": "array",
       "items": {
         "$ref": "./EventType.json"
@@ -28,8 +28,8 @@
     }
   },
   "required": [
-    "startEventType",
-    "stopEventType",
-    "nextStopEventTypes"
+    "startEvent",
+    "mainStopEvent",
+    "nextStopEvents"
   ]
 }
