@@ -11,7 +11,8 @@
       "enum": [
         "production",
         "legal",
-        "archive"
+        "archive",
+        "data locking"
       ]
     },
     "startEvent": {
