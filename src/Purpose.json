@@ -16,8 +16,11 @@
       "type": "boolean",
       "description": "Specifies whether the purpose is the main purpose or an accessory purpose"
     },
-    "legalBasis": {
-      "$ref": "./LegalBasis.json"
+    "legalBases": {
+      "type": "array",
+      "items": {
+        "$ref": "./LegalBasis.json"
+      }
     },
     "dataCategories": {
       "type": "array",
@@ -31,7 +34,7 @@
     "name",
     "description",
     "isMain",
-    "legalBasis",
+    "legalBases",
     "dataCategories"
   ]
 }
