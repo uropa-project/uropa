@@ -27,19 +27,11 @@
       "items": {
         "$ref": "./DataLocation.json"
       }
-    },
-    "dataSubjectCategories": {
-      "type": "array",
-      "description": "The DataSubjectCategory concerned by this DataType",
-      "items": {
-        "$ref": "./DataSubjectCategory.json"
-      }
     }
   },
   "required": [
     "name",
     "isOptional",
-    "dataLocations",
-    "dataSubjectCategories"
+    "dataLocations"
   ]
 }
