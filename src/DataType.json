@@ -10,7 +10,8 @@
     },
     "isOptional": {
       "type": "boolean",
-      "description": "True if it's not required by the Purpose, False otherwise"
+      "description": "True if it's not required by the Purpose, False otherwise",
+      "default": false
     },
     "collectionMean": {
       "type": "string",
