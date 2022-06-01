@@ -1,5 +1,5 @@
 {
-  "description": "abstraction of the medium on which PersonalData is stored. It could be a hard drive on site, a SaaS, or even an archive room",
+  "description": "Abstraction of the medium on which the personal data is stored. It could be a hard drive on site, a SaaS, or even an archive room.",
   "type": "object",
   "title": "DataSource",
   "properties": {
