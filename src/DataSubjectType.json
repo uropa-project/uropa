@@ -1,12 +1,15 @@
 {
-  "title": "DataSubjectCategory",
+  "title": "DataSubjectType",
+  "x-stoplight": {
+    "id": "8670ba79d90b1"
+  },
   "type": "object",
-  "description": "description of the data subject category",
+  "description": "description of the data subject type",
   "properties": {
     "name": {
       "type": "string",
       "example": "subscribers",
-      "description": "The name of the data subject category"
+      "description": "The name of the data subject type"
     },
     "isChild": {
       "type": "boolean",

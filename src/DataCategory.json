@@ -18,6 +18,12 @@
       "items": {
         "$ref": "./DataType.json"
       }
+    },
+    "dataSubjectTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "./DataSubjectType.json"
+      }
     }
   },
   "required": [
