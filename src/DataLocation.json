@@ -36,10 +36,10 @@
     "dataSource": {
       "$ref": "./DataSource.json"
     },
-    "storageDurationRules": {
+    "storageDurations": {
       "type": "array",
       "items": {
-        "$ref": "./StorageDurationRule.json"
+        "$ref": "./StorageDuration.json"
       }
     }
   },
@@ -48,6 +48,6 @@
     "dataSupport",
     "storageState",
     "dataSource",
-    "storageDurationRules"
+    "storageDurations"
   ]
 }

@@ -10,7 +10,8 @@
     "isSensitive": {
       "type": "boolean",
       "example": "normal",
-      "description": "Specifies whether the dataCategory contains sensitive data"
+      "description": "Specifies whether the dataCategory contains sensitive data",
+      "default": false
     },
     "dataTypes": {
       "type": "array",
