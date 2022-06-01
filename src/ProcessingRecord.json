@@ -81,8 +81,8 @@
         "$ref": "./DataTransfer.json"
       }
     },
-    "DPIAInfos": {
-      "$ref": "./DPIAInfos.json"
+    "Dpia": {
+      "$ref": "./Dpia.json"
     }
   },
   "required": [

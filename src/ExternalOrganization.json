@@ -1,7 +1,7 @@
 {
   "title": "ExternalOrganization",
   "type": "object",
-  "description": "Information about the external organization that is a recipient of the data processed. Useful to manage authorisations, contracts and other legal instruments.",
+  "description": "Information about the external organization that is a recipient of the data processed. Useful to manage authorizations, contracts and other legal instruments.",
   "properties": {
     "name": {
       "type": "string",

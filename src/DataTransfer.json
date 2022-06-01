@@ -11,13 +11,13 @@
     "country": {
       "$ref": "./Country.json"
     },
-    "DataTransferLegalBasis": {
+    "dataTransferLegalBasis": {
       "$ref": "./DataTransferLegalBasis.json"
     }
   },
   "required": [
     "description",
     "country",
-    "DataTransferLegalBasis"
+    "dataTransferLegalBasis"
   ]
 }
