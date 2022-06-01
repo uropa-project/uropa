@@ -1,5 +1,8 @@
 {
-  "title": "DPIAInfos",
+  "title": "DPIA",
+  "x-stoplight": {
+    "id": "8705d7264de8f"
+  },
   "type": "object",
   "examples": [],
   "description": "The description of the some data related to the data protection impact assessment (DPIA) established for the processing according to article 35 GDPR",
@@ -10,8 +13,7 @@
     },
     "stopDate": {
       "type": "string",
-      "description": "The date of the DPIA or the last update of the DPIA",
-      "format": "date"
+      "description": "The date of the DPIA or the last update of the DPIA"
     },
     "path": {
       "type": "string",
