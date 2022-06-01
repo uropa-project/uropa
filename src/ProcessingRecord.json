@@ -82,7 +82,7 @@
       }
     },
     "DPIAInfos": {
-      "$ref": "./DPIA.json"
+      "$ref": "./Dpia.json"
     }
   },
   "required": [
