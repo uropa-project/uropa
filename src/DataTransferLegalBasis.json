@@ -26,7 +26,8 @@
     },
     "isConsent": {
       "type": "boolean",
-      "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)"
+      "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)",
+      "default": false
     },
     "recipient": {
       "type": "object",
