@@ -3,7 +3,7 @@
   "type": "object",
   "description": "classification that pertains to how an atomic piece of data must be treated in order to be compliant with GDPR",
   "properties": {
-    "transferLegalBasisType": {
+    "legalBasisType": {
       "type": "string",
       "enum": [
         "adequacy decision",
@@ -13,7 +13,7 @@
       "example": "appropriate safeguards",
       "description": "The type of legal basis used to transfer data outside the EU according to the GDPR"
     },
-    "transferLegalBasisDescription": {
+    "description": {
       "type": "string",
       "description": "Describes the legal basis of the transfer",
       "example": "standard contractual clauses"
@@ -46,8 +46,8 @@
     }
   },
   "required": [
-    "transferLegalBasisType",
-    "transferLegalBasisDescription",
+    "legalBasisType",
+    "description",
     "isConsent",
     "recipient"
   ]
