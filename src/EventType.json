@@ -5,7 +5,6 @@
   "properties": {
     "name": {
       "type": "string",
-      "minLength": 1,
       "example": "user_log_in",
       "description": "The name of the event"
     },
@@ -14,23 +13,12 @@
       "example": "Un utilisateur se connecte sur notre site",
       "description": "The description of the event"
     },
-    "triggerType": {
-      "type": "string",
-      "minLength": 1,
-      "enum": [
-        "action",
-        "countdown"
-      ],
-      "example": "countdown",
-      "description": "Specifies whether the event is triggered by an action or by a countdown"
-    },
     "countdown": {
       "$ref": "./Countdown.json"
     }
   },
   "required": [
     "name",
-    "description",
-    "triggerType"
+    "description"
   ]
 }
