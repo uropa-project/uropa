@@ -81,7 +81,7 @@
         "$ref": "./DataTransfer.json"
       }
     },
-    "Dpia": {
+    "dpia": {
       "$ref": "./Dpia.json"
     }
   },
