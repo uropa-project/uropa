@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Information about the external organization that is a recipient of the data processed. Useful to manage authorizations, contracts and other legal instruments.",
   "properties": {
-    "name": {
+    "description": {
       "type": "string",
       "description": "name of the organization",
       "example": "San Francisco branch of CODE IS LAW"
@@ -25,7 +25,7 @@
     }
   },
   "required": [
-    "name",
+    "description",
     "organizationStatus",
     "legalPerson"
   ]

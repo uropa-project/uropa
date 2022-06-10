@@ -5,7 +5,6 @@
   "properties": {
     "name": {
       "type": "string",
-      "minLength": 1,
       "example": "user_log_in",
       "description": "The name of the event"
     },
@@ -14,30 +13,12 @@
       "example": "Un utilisateur se connecte sur notre site",
       "description": "The description of the event"
     },
-    "triggerType": {
-      "type": "string",
-      "minLength": 1,
-      "enum": [
-        "action",
-        "countdown"
-      ],
-      "example": "countdown",
-      "description": "Specifies whether the event is triggered by an action or by a countdown"
-    },
-    "isCreative": {
-      "type": "boolean",
-      "description": "tell if this event will create actual data in the client systems. Example: when a user sign up, it creates an account with (for example) the name and the email of the user. A sign in doesn't create new data in the client system.",
-      "default": "creates data"
-    },
     "countdown": {
       "$ref": "./Countdown.json"
     }
   },
   "required": [
     "name",
-    "description",
-    "triggerType",
-    "isCreative",
-    "countdown"
+    "description"
   ]
 }
