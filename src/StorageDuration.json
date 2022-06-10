@@ -11,8 +11,8 @@
       "enum": [
         "production",
         "legal",
-        "archive",
-        "data locking"
+        "data locking",
+        "definitive archive"
       ]
     },
     "startEvent": {
@@ -21,7 +21,7 @@
     "mainStopEvent": {
       "$ref": "./EventType.json"
     },
-    "nextStopEvents": {
+    "earlyStopEvents": {
       "type": "array",
       "items": {
         "$ref": "./EventType.json"
@@ -31,6 +31,6 @@
   "required": [
     "startEvent",
     "mainStopEvent",
-    "nextStopEvents"
+    "earlyStopEvents"
   ]
 }

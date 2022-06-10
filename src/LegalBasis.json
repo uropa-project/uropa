@@ -23,7 +23,7 @@
     },
     "source": {
       "type": "string",
-      "description": "Link toward the legal basis of the processing",
+      "description": "Link toward the source reference",
       "example": "https://www.proof.url",
       "format": "uri"
     },
