@@ -21,9 +21,9 @@
       "example": "Article L323-2 du Code de commerce sur la conversation des documents comptables",
       "description": "Provides a description of the legal basis (including any additional legal text to refer to)"
     },
-    "proof": {
+    "source": {
       "type": "string",
-      "description": "Link toward the legal basis of the processing",
+      "description": "Link toward the source reference",
       "example": "https://www.proof.url",
       "format": "uri"
     },
@@ -33,7 +33,6 @@
   },
   "required": [
     "legalBasisType",
-    "description",
-    "legalBasisProof"
+    "description"
   ]
 }
