@@ -20,10 +20,10 @@
       "example": "28/06/2022"
     },
     "dataController": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
     "representative": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
     "jointControllers": {
       "type": "array",
