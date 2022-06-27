@@ -4,7 +4,7 @@
   "description": "Information about the data processor that is a recipient of the data processed. Useful to manage authorisations, contracts and other legal instruments.",
   "properties": {
     "legalPerson": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
     "dataCategoriesDisclosed": {
       "type": "array",
