@@ -4,7 +4,7 @@
   "description": "The description of the joint controller. A joint controller is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
   "properties": {
     "legalPerson": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
     "legalAgreementPath": {
       "type": "string",
