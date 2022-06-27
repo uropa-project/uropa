@@ -1,5 +1,8 @@
 {
   "title": "ROPA",
+  "x-stoplight": {
+    "id": "3ff690c5644eb"
+  },
   "type": "object",
   "description": "A ROPA is a record of processing activity that shall be maintained by the data controller according to article 30 GDPR. A ROPA is a full picture of the data processing, including its purpose, extent and management. ",
   "examples": [],
