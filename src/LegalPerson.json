@@ -1,7 +1,7 @@
 {
-  "title": "LegalPerson",
+  "title": "LegalEntity",
   "type": "object",
-  "description": "A LegalPerson is an entity that process personal data. It's usually a company or an organization.",
+  "description": "A legal entity is an entity (natural or legal person) that processes personal data. It is usually a company or an organization.",
   "properties": {
     "name": {
       "type": "string",
