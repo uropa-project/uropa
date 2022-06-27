@@ -1,13 +1,13 @@
 {
-  "title": "ProcessingRecord",
+  "title": "ROPA",
   "type": "object",
-  "description": "An inventory of the data processing according to article 30 GDPR. It must reflect the reality of the personal data processing, to keep track of the usage of personal data in the controller system.",
+  "description": "A ROPA is a record of processing activity that shall be maintained by the data controller according to article 30 GDPR. A ROPA is a full picture of the data processing, including its purpose, extent and management. ",
   "examples": [],
   "properties": {
     "name": {
-      "example": "Gestion de la trésorerie",
       "type": "string",
-      "description": "The name of the processing"
+      "description": "The name of the processing",
+      "example": "Newsletter management"
     },
     "internalId": {
       "type": "string",
@@ -16,9 +16,10 @@
     "updatedAt": {
       "type": "string",
       "description": "The date of the last update of the ProcessingRecord",
-      "format": "date-time"
+      "format": "date",
+      "example": "28/06/2022"
     },
-    "legalPerson": {
+    "dataController": {
       "$ref": "./LegalPerson.json"
     },
     "representative": {
@@ -88,7 +89,7 @@
   "required": [
     "name",
     "updatedAt",
-    "legalPerson",
+    "dataController",
     "purposes",
     "recipients",
     "securityMeasures"
