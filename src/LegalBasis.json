@@ -36,6 +36,8 @@
   },
   "required": [
     "legalBasisType",
-    "description"
+    "source",
+    "startValidity",
+    "stopValidity"
   ]
 }

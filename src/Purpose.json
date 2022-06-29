@@ -32,7 +32,6 @@
   },
   "required": [
     "name",
-    "description",
     "isMain",
     "legalBases",
     "dataCategories"

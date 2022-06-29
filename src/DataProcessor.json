@@ -19,6 +19,7 @@
     }
   },
   "required": [
-    "legalPerson"
+    "legalPerson",
+    "dataCategoriesDisclosed"
   ]
 }

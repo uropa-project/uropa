@@ -21,7 +21,6 @@
   },
   "required": [
     "name",
-    "storageType",
     "country"
   ]
 }

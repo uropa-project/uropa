@@ -19,5 +19,9 @@
       "type": "string",
       "description": "The path to the DPIA document"
     }
-  }
+  },
+  "required": [
+    "description",
+    "stopDate"
+  ]
 }

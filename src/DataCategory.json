@@ -30,6 +30,7 @@
   "required": [
     "name",
     "isSensitive",
-    "dataTypes"
+    "dataTypes",
+    "dataSubjectTypes"
   ]
 }

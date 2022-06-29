@@ -17,10 +17,11 @@
       "type": "string",
       "enum": [
         "generated",
-        "computed",
-        "submitted"
+        "inferred",
+        "collected"
       ],
-      "description": "How the DataType was collected"
+      "description": "How the DataType was collected",
+      "default": "collected"
     },
     "dataLocations": {
       "type": "array",
@@ -33,6 +34,7 @@
   "required": [
     "name",
     "isOptional",
+    "collectionMean",
     "dataLocations"
   ]
 }
