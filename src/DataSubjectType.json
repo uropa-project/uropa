@@ -13,7 +13,8 @@
     },
     "isChild": {
       "type": "boolean",
-      "description": "Provides information about the data subject being a child or not"
+      "description": "Provides information about the data subject being a child or not",
+      "default": false
     }
   },
   "required": [
