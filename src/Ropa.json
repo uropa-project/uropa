@@ -28,11 +28,11 @@
     "representative": {
       "$ref": "./LegalEntity.json"
     },
-    "jointControllers": {
+    "jointDataControllers": {
       "type": "array",
       "description": "A JointController is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
       "items": {
-        "$ref": "./JointController.json"
+        "$ref": "./JointDataController.json"
       }
     },
     "purposes": {

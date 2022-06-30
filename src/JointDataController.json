@@ -1,7 +1,10 @@
 {
-  "title": "JointController",
+  "title": "JointDataController",
+  "x-stoplight": {
+    "id": "cdf8859275ec8"
+  },
   "type": "object",
-  "description": "The description of the joint controller. A joint controller is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
+  "description": "A joint data controller is an entity that jointly determines the purposes and the means of the processing of the personal data.",
   "properties": {
     "legalPerson": {
       "$ref": "./LegalEntity.json"
