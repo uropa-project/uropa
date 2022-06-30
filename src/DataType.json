@@ -6,11 +6,11 @@
     "name": {
       "type": "string",
       "example": "firstname",
-      "description": "The name of the DataType"
+      "description": "ex: first name, email, IP address etc."
     },
     "isOptional": {
       "type": "boolean",
-      "description": "True if it's not required by the Purpose, False otherwise",
+      "description": "True if the data type is not required for the purpose, false otherwise",
       "default": false
     },
     "collectionMean": {
@@ -20,8 +20,8 @@
         "inferred",
         "collected"
       ],
-      "description": "How the DataType was collected",
-      "default": "collected"
+      "default": "collected",
+      "description": "Information on the origin of the personal data"
     },
     "dataLocations": {
       "type": "array",
