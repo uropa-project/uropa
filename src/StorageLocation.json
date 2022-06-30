@@ -11,20 +11,25 @@
       "description": "Provides a general description of the data location",
       "example": "Shared VM hosted by OVH"
     },
-    "dataSupport": {
-      "type": "string",
-      "enum": [
-        "physical",
-        "digital"
-      ],
-      "example": "digital",
-      "description": "Specifies whether the data is stored in a digital or physical support"
-    },
     "path": {
       "type": "string",
       "minLength": 1,
       "example": "/db/emailing-db/table/contacts/column/email",
       "description": "Specifies the path to access where the data item is stored"
+    },
+    "storageMedium": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "support": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
     },
     "storageState": {
       "type": "string",
@@ -36,9 +41,6 @@
       "example": "production",
       "description": "Provides information about the state of the storage"
     },
-    "dataSource": {
-      "$ref": "./DataSource.json"
-    },
     "storageDurations": {
       "type": "array",
       "items": {
@@ -47,9 +49,7 @@
     }
   },
   "required": [
-    "dataSupport",
     "storageState",
-    "dataSource",
     "storageDurations"
   ]
 }
