@@ -23,7 +23,7 @@
       "default": "collected",
       "description": "Information on the origin of the personal data"
     },
-    "dataLocations": {
+    "storageLocations": {
       "type": "array",
       "description": "Where the DataType can be found",
       "items": {
@@ -35,6 +35,6 @@
     "name",
     "isOptional",
     "collectionMean",
-    "dataLocations"
+    "storageLocations"
   ]
 }
