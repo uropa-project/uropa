@@ -11,6 +11,9 @@
       "example": "Shared VM hosted by OVH",
       "description": "Provides a general description of the data location (ex: datacenter in EU)"
     },
+    "country": {
+      "$ref": "./Country.json"
+    },
     "path": {
       "type": "string",
       "minLength": 1,
