@@ -14,6 +14,7 @@
     },
     "legalBases": {
       "type": "array",
+      "description": "Legal bases are reasons used to justify processing of personal data. Applicable legal bases are defined by legislations (ex: art. 6 GDPR). ",
       "items": {
         "$ref": "./LegalBasis.json"
       }
