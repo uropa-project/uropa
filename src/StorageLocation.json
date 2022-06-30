@@ -1,5 +1,5 @@
 {
-  "description": "Place where a data item is stored within a DataSource. \n\nExample: \"/users/first_name\" in the \"database-44\"",
+  "description": "Place where the data is stored (location or geospatial scope)",
   "x-stoplight": {
     "id": "e12d157ed32c7"
   },
