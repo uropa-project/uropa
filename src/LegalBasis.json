@@ -1,7 +1,7 @@
 {
   "title": "LegalBasis",
   "type": "object",
-  "description": "A legal basis is a reason used to justify processing of personal data. Applicable legal bases are defined by legislations. ",
+  "description": "A legal basis is a reason used to justify processing of personal data. Applicable legal bases are defined by legislations (ex: art. 6 GDPR). ",
   "examples": [],
   "properties": {
     "legalBasisType": {
