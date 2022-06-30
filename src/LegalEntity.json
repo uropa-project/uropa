@@ -23,14 +23,14 @@
     "ceo": {
       "$ref": "./Ceo.json"
     },
-    "postalAddress": {
-      "$ref": "./PostalAddress.json"
+    "address": {
+      "$ref": "./Address.json"
     }
   },
   "required": [
     "name",
     "email",
     "ceo",
-    "postalAddress"
+    "address"
   ]
 }

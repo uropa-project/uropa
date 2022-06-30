@@ -1,5 +1,8 @@
 {
-  "title": "PostalAddress",
+  "title": "Address",
+  "x-stoplight": {
+    "id": "ebf5383c7aa08"
+  },
   "type": "object",
   "description": "Postal address information (ex: location of a legal person, contact postal address of CEO or DPO)",
   "x-internal": true,
