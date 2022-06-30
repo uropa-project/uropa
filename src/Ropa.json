@@ -30,7 +30,7 @@
     },
     "jointDataControllers": {
       "type": "array",
-      "description": "A JointController is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
+      "description": "Joint data controllers are a group of data controllers that jointly determine the purposes and means of processing of personal data",
       "items": {
         "$ref": "./JointDataController.json"
       }
