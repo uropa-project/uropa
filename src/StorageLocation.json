@@ -8,8 +8,8 @@
   "properties": {
     "description": {
       "type": "string",
-      "description": "Provides a general description of the data location",
-      "example": "Shared VM hosted by OVH"
+      "example": "Shared VM hosted by OVH",
+      "description": "Provides a general description of the data location (ex: datacenter in EU)"
     },
     "path": {
       "type": "string",
@@ -21,13 +21,16 @@
       "type": "object",
       "properties": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "name of the storage medium (name of the database, of the server etc.)"
         },
         "support": {
-          "type": "string"
+          "type": "string",
+          "description": "whether the data is stored digitally or physically"
         },
         "type": {
-          "type": "string"
+          "type": "string",
+          "description": "type of storage medium (ex: paper binder, postgresql database)"
         }
       }
     },
