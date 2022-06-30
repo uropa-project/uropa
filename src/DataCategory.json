@@ -1,11 +1,11 @@
 {
   "title": "DataCategory",
   "type": "object",
-  "description": "High-Level description of the personal data processed that encompasses one or several data types. Ex : the data category \"identity information\" can encompass several data types such as first name, last name, birthdate etc. ",
+  "description": "High-Level description of the personal data processed that encompasses one or several data types. Ex : the data category \"identity\" can encompass several data types such as first name, last name, birthdate etc. ",
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the data Category"
+      "description": "ex : identity, connection data, lifestyle etc."
     },
     "isSensitive": {
       "type": "boolean",
