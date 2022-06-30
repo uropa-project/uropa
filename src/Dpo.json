@@ -1,5 +1,5 @@
 {
-  "description": "The Data Protection Officer (DPO) of the legal person.",
+  "description": "The Data Protection Officer (DPO) of the legal person. The DPO monitors internal compliance and acts as a contact point for data subjects and supervisory authorities. ",
   "type": "object",
   "title": "Dpo",
   "properties": {
