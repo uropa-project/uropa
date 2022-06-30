@@ -1,7 +1,7 @@
 {
   "title": "Purpose",
   "type": "object",
-  "description": "The purpose of the processing describes what the reason why the controller processes the personal data\n\n(ex : Customer relationship management, Payroll management, Maintenance of medical records, Creditworthiness assessment)",
+  "description": "The purpose of the processing describes the aim of the processing of the personal data. \n\n(ex : Customer relationship management, Payroll management, Maintenance of medical records, Creditworthiness assessment)",
   "examples": [],
   "properties": {
     "name": {
