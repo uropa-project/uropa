@@ -42,7 +42,7 @@
         "archives"
       ],
       "example": "production",
-      "description": "Provides information about the state of the storage"
+      "description": "Provides information about the state of the storage (production, legal archives, data locking, definitive archives ...)"
     },
     "storageDurations": {
       "type": "array",
