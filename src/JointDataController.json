@@ -11,7 +11,7 @@
     },
     "legalAgreementPath": {
       "type": "string",
-      "description": "The path to the contract or binding agreement with the joint controller"
+      "description": "The path to the binding agreement with the joint controller"
     }
   },
   "required": [
