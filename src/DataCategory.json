@@ -1,7 +1,7 @@
 {
   "title": "DataCategory",
   "type": "object",
-  "description": "High-Level description of the personal data processed that is aggregation of related DataTypes. For instance, the name and the first name are dataTypes and identity information is the dataCategory",
+  "description": "High-Level description of the personal data processed that encompasses one or several data types. Ex : the data category \"identity information\" can encompass several data types such as first name, last name, birthdate etc. ",
   "properties": {
     "name": {
       "type": "string",
