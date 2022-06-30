@@ -4,18 +4,18 @@
     "id": "323cb95303343"
   },
   "type": "object",
-  "description": "A legal entity is an entity (natural or legal person) that processes personal data. It is usually a company, an organization, an individual etc. ",
+  "description": "A legal entity is an entity (natural or legal person) that processes personal data. It can be a company, an organization, an individual etc. ",
   "properties": {
     "name": {
       "type": "string",
       "example": "CODE IS LAW",
-      "description": "The name of the legal person"
+      "description": "The name of the entity"
     },
     "email": {
       "type": "string",
       "format": "email",
       "example": "amazon@gmail.com",
-      "description": "The contact email of the legal person"
+      "description": "The contact email of the entity"
     },
     "dpo": {
       "$ref": "./Dpo.json"
