@@ -22,6 +22,7 @@
     },
     "dataSubjectTypes": {
       "type": "array",
+      "description": "The categories of individuals whose personal data is processed (ex : employees, prospects, clients)",
       "items": {
         "$ref": "./DataSubjectType.json"
       }
