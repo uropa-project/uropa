@@ -27,7 +27,7 @@
       "type": "array",
       "description": "Where the DataType can be found",
       "items": {
-        "$ref": "./DataLocation.json"
+        "$ref": "./StorageLocation.json"
       }
     }
   },
