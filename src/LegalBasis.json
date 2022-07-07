@@ -19,7 +19,7 @@
     "description": {
       "type": "string",
       "example": "Article L323-2 du Code de commerce sur la conversation des documents comptables",
-      "description": "Provides a description of the legal basis (including any additional legal text to refer to)"
+      "description": "Provides a description of the legal basis, including overrinding legitimate interests"
     },
     "source": {
       "type": "string",

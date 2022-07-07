@@ -9,6 +9,13 @@
     },
     "Address": {
       "$ref": "./Address.json"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "internal",
+        "external"
+      ]
     }
   },
   "required": [

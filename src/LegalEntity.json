@@ -11,26 +11,29 @@
       "example": "CODE IS LAW",
       "description": "The name of the entity"
     },
+    "idNumber": {
+      "type": "string"
+    },
     "email": {
       "type": "string",
       "format": "email",
       "example": "amazon@gmail.com",
       "description": "The contact email of the entity"
     },
-    "dpo": {
-      "$ref": "./Dpo.json"
+    "address": {
+      "$ref": "./Address.json"
     },
     "ceo": {
       "$ref": "./Ceo.json"
     },
-    "address": {
-      "$ref": "./Address.json"
+    "dpo": {
+      "$ref": "./Dpo.json"
     }
   },
   "required": [
     "name",
     "email",
-    "ceo",
-    "address"
+    "address",
+    "ceo"
   ]
 }

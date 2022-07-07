@@ -16,6 +16,9 @@
       "type": "string",
       "description": "The reference of the ROPA"
     },
+    "creationDate": {
+      "type": "string"
+    },
     "updatedAt": {
       "type": "string",
       "description": "The date of the last update of the ProcessingRecord",

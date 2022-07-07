@@ -13,6 +13,10 @@
       "description": "Specifies whether the dataCategory contains sensitive data",
       "default": false
     },
+    "sensitiveLegalBasis": {
+      "type": "string",
+      "description": "Description of the legal basis of the sensitive data processing according to art. 9 and 10 GDPR"
+    },
     "dataTypes": {
       "type": "array",
       "description": "Description of the DataTypes related to the dataCategory",
