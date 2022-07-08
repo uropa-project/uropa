@@ -18,21 +18,7 @@
       "description": "Specifies the path to access where the data item is stored"
     },
     "dataCarrier": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "name of the storage medium (name of the database, of the server etc.)"
-        },
-        "support": {
-          "type": "string",
-          "description": "whether the data is stored digitally or physically"
-        },
-        "type": {
-          "type": "string",
-          "description": "type of storage medium (ex: paper binder, postgresql database)"
-        }
-      }
+      "$ref": "./DataCarrier.json"
     },
     "storageState": {
       "type": "string",
