@@ -20,7 +20,7 @@
       "example": "/db/emailing-db/table/contacts/column/email",
       "description": "Specifies the path to access where the data item is stored"
     },
-    "storageMedium": {
+    "dataCarrier": {
       "type": "object",
       "properties": {
         "name": {
