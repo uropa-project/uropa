@@ -33,7 +33,6 @@
   "required": [
     "name",
     "email",
-    "address",
-    "ceo"
+    "address"
   ]
 }
