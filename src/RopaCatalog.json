@@ -1,0 +1,36 @@
+{
+  "title": "RopaCatalog",
+  "x-stoplight": {
+    "id": "9u7ucs12k4adt"
+  },
+  "type": "object",
+  "properties": {
+    "ropas": {
+      "type": "array",
+      "items": {
+        "$ref": "./Ropa.json"
+      }
+    },
+    "legalEntities": {
+      "type": "array",
+      "items": {
+        "$ref": "./LegalEntity.json"
+      }
+    },
+    "internalDepartments": {
+      "type": "array",
+      "items": {
+        "$ref": "./InternalDepartment.json"
+      }
+    },
+    "securityMeasures": {
+      "type": "array",
+      "items": {
+        "$ref": "./SecurityMeasure.json"
+      }
+    },
+    "dataCarriers": {
+      "type": "string"
+    }
+  }
+}
