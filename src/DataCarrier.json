@@ -1,7 +1,10 @@
 {
   "description": "Abstraction of the medium on which the personal data is stored. It could be a hard drive on site, a SaaS, or even an archive room.",
+  "x-stoplight": {
+    "id": "9ac0b8c512956"
+  },
   "type": "object",
-  "title": "DataSource",
+  "title": "DataCarrier",
   "properties": {
     "name": {
       "type": "string",
@@ -9,7 +12,15 @@
       "example": "server 42",
       "description": "The name of the data source (ex: name of database, server etc.)"
     },
-    "storageType": {
+    "support": {
+      "type": "string",
+      "enum": [
+        "physical",
+        "digital"
+      ],
+      "description": "Describes the way the data is grounded in a medium."
+    },
+    "type": {
       "type": "string",
       "minLength": 1,
       "example": "database_postgresql",
@@ -21,6 +32,7 @@
   },
   "required": [
     "name",
+    "support",
     "country"
   ]
 }
