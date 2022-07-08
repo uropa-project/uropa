@@ -16,7 +16,7 @@
       "type": "string",
       "description": "The reference of the ROPA"
     },
-    "creationDate": {
+    "createdAt": {
       "type": "string"
     },
     "updatedAt": {
@@ -95,6 +95,7 @@
     "updatedAt",
     "purposes",
     "recipients",
-    "securityMeasures"
+    "securityMeasures",
+    "hasAutomatedDecisionMaking"
   ]
 }
