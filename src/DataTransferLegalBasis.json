@@ -29,19 +29,37 @@
       "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)",
       "default": false
     },
-    "recipient": {
+    "recipients": {
       "type": "object",
       "minProperties": 1,
       "maxProperties": 1,
       "properties": {
-        "dataProcessor": {
-          "$ref": "./DataProcessor.json"
+        "dataProcessors": {
+          "type": "array",
+          "items": {
+            "$ref": "./DataProcessor.json"
+          }
         },
-        "externalOrganization": {
-          "$ref": "./ExternalOrganization.json"
+        "externalOrganizations": {
+          "type": "array",
+          "items": {
+            "$ref": "./ExternalOrganization.json"
+          }
         },
-        "internalDepartment": {
-          "$ref": "./InternalDepartment.json"
+        "internalDepartments": {
+          "type": "array",
+          "items": {
+            "$ref": "./InternalDepartment.json"
+          }
+        },
+        "jointDataControllers": {
+          "type": [
+            "string",
+            "array"
+          ],
+          "items": {
+            "$ref": "./JointDataController.json"
+          }
         }
       }
     }
@@ -50,6 +68,6 @@
     "legalBasisType",
     "description",
     "isConsent",
-    "recipient"
+    "recipients"
   ]
 }
