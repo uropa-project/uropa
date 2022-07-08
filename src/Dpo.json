@@ -15,11 +15,13 @@
       "enum": [
         "internal",
         "external"
-      ]
+      ],
+      "default": "internal"
     }
   },
   "required": [
     "personalInformation",
-    "Address"
+    "Address",
+    "status"
   ]
 }
