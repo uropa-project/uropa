@@ -25,12 +25,6 @@
       "format": "date",
       "example": "28/06/2022"
     },
-    "dataController": {
-      "$ref": "./LegalEntity.json"
-    },
-    "representative": {
-      "$ref": "./LegalEntity.json"
-    },
     "jointDataControllers": {
       "type": "array",
       "description": "Joint data controllers are a group of data controllers that jointly determine the purposes and means of processing of personal data",
@@ -99,7 +93,6 @@
   "required": [
     "name",
     "updatedAt",
-    "dataController",
     "purposes",
     "recipients",
     "securityMeasures"

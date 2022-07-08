@@ -5,6 +5,12 @@
   },
   "type": "object",
   "properties": {
+    "dataController": {
+      "$ref": "./LegalEntity.json"
+    },
+    "representative": {
+      "$ref": "./LegalEntity.json"
+    },
     "ropas": {
       "type": "array",
       "items": {
@@ -37,6 +43,7 @@
     }
   },
   "required": [
+    "dataController",
     "ropas",
     "legalEntities",
     "internalDepartments",
