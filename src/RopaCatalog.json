@@ -30,7 +30,17 @@
       }
     },
     "dataCarriers": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "$ref": "./DataCarrier.json"
+      }
     }
-  }
+  },
+  "required": [
+    "ropas",
+    "legalEntities",
+    "internalDepartments",
+    "securityMeasures",
+    "dataCarriers"
+  ]
 }
