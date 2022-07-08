@@ -18,6 +18,9 @@
     "stopDate": {
       "type": "string",
       "description": "The date of the DPIA or the last update of the DPIA"
+    },
+    "hasPriorConsultation": {
+      "type": "boolean"
     }
   },
   "required": [
