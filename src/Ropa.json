@@ -88,6 +88,9 @@
         "$ref": "./DataTransfer.json"
       }
     },
+    "hasAutomatedDecisionMaking": {
+      "type": "boolean"
+    },
     "dpia": {
       "$ref": "./Dpia.json"
     }
