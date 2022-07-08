@@ -89,7 +89,8 @@
       }
     },
     "hasAutomatedDecisionMaking": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "dpia": {
       "$ref": "./Dpia.json"
