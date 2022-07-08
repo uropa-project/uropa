@@ -16,7 +16,7 @@
       "type": "string",
       "description": "The reference of the ROPA"
     },
-    "creationDate": {
+    "createdAt": {
       "type": "string"
     },
     "updatedAt": {
