@@ -11,14 +11,14 @@
       "example": "CODE IS LAW",
       "description": "The name of the entity"
     },
-    "registrationNumber": {
-      "type": "string"
-    },
     "email": {
       "type": "string",
       "format": "email",
       "example": "amazon@gmail.com",
       "description": "The contact email of the entity"
+    },
+    "registrationNumber": {
+      "type": "string"
     },
     "address": {
       "$ref": "./Address.json"
