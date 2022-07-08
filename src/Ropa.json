@@ -17,12 +17,14 @@
       "description": "The reference of the ROPA"
     },
     "createdAt": {
-      "type": "string"
+      "type": "string",
+      "description": "The date of the first creation of the ROPA",
+      "format": "date-time"
     },
     "updatedAt": {
       "type": "string",
-      "description": "The date of the last update of the ProcessingRecord",
-      "format": "date",
+      "description": "The date of the last update of the ROPA\n",
+      "format": "date-time",
       "example": "28/06/2022"
     },
     "dataController": {
