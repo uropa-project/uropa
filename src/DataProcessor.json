@@ -3,7 +3,7 @@
   "type": "object",
   "description": "A data processor processed personal data on behalf of the controller. Information on the data processor is useful to manage authorisations, contracts and other legal instruments.",
   "properties": {
-    "legalPerson": {
+    "legalEntity": {
       "$ref": "./LegalEntity.json"
     },
     "dataCategoriesDisclosed": {
@@ -19,7 +19,7 @@
     }
   },
   "required": [
-    "legalPerson",
+    "legalEntity",
     "dataCategoriesDisclosed"
   ]
 }
