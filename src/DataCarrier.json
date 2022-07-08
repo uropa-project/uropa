@@ -6,10 +6,6 @@
   "type": "object",
   "title": "DataCarrier",
   "properties": {
-    "description": {
-      "type": "string",
-      "description": "Provides a general description of the data location (ex: datacenter in EU)"
-    },
     "support": {
       "type": "string",
       "enum": [
