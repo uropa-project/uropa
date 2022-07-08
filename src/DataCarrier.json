@@ -1,16 +1,14 @@
 {
-  "description": "Abstraction of the data carroer on which the personal data is stored. It could be a hard drive on site, a SaaS, or even an archive room.",
+  "description": "Abstraction of the data carrier on which the personal data is stored. It could be a hard drive on site, a SaaS, or even an archive room.",
   "x-stoplight": {
     "id": "9ac0b8c512956"
   },
   "type": "object",
   "title": "DataCarrier",
   "properties": {
-    "name": {
+    "description": {
       "type": "string",
-      "minLength": 1,
-      "example": "server 42",
-      "description": "The name of the data source (ex: name of database, server etc.)"
+      "description": "Provides a general description of the data location (ex: datacenter in EU)"
     },
     "support": {
       "type": "string",
@@ -18,6 +16,12 @@
         "physical",
         "digital"
       ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "example": "server 42",
+      "description": "The name of the data source (ex: name of database, server etc.)"
     },
     "type": {
       "type": "string",
@@ -27,10 +31,20 @@
     },
     "country": {
       "$ref": "./Country.json"
+    },
+    "storageState": {
+      "type": "string",
+      "enum": [
+        "production",
+        "legal",
+        "archives"
+      ],
+      "example": "production",
+      "default": "production"
     }
   },
   "required": [
-    "name",
-    "support"
+    "support",
+    "name"
   ]
 }

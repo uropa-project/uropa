@@ -6,11 +6,6 @@
   "type": "object",
   "title": "StorageLocation",
   "properties": {
-    "description": {
-      "type": "string",
-      "example": "Shared VM hosted by OVH",
-      "description": "Provides a general description of the data location (ex: datacenter in EU)"
-    },
     "path": {
       "type": "string",
       "minLength": 1,
@@ -20,16 +15,6 @@
     "dataCarrier": {
       "$ref": "./DataCarrier.json"
     },
-    "storageState": {
-      "type": "string",
-      "enum": [
-        "production",
-        "legal",
-        "archives"
-      ],
-      "example": "production",
-      "description": "Provides information about the state of the storage (production, legal archives, data locking, definitive archives ...)"
-    },
     "storageDurations": {
       "type": "array",
       "items": {
@@ -38,7 +23,6 @@
     }
   },
   "required": [
-    "storageState",
     "storageDurations"
   ]
 }
