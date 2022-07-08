@@ -7,10 +7,6 @@
   "examples": [],
   "description": "The description of the some data related to the data protection impact assessment (DPIA) established for the processing according to article 35 GDPR",
   "properties": {
-    "path": {
-      "type": "string",
-      "description": "The path to the DPIA document"
-    },
     "description": {
       "type": "string",
       "description": "A brief resume of the results of the DPIA"
@@ -18,6 +14,10 @@
     "stopDate": {
       "type": "string",
       "description": "The date of the DPIA or the last update of the DPIA"
+    },
+    "path": {
+      "type": "string",
+      "description": "The path to the DPIA document"
     },
     "hasPriorConsultation": {
       "type": "boolean"
