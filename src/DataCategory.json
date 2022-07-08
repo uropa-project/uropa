@@ -15,7 +15,20 @@
     },
     "sensitiveLegalBasis": {
       "type": "string",
-      "description": "Description of the legal basis of the sensitive data processing according to art. 9 and 10 GDPR"
+      "description": "Description of the legal basis of the sensitive data processing according to art. 9 and 10 GDPR",
+      "enum": [
+        "explicit consent",
+        "employment social security social protection",
+        "vital interests",
+        "non-for-profit bodies",
+        "made public by data subject",
+        "legal claims or judicial acts",
+        "reasons of subtantial public interest",
+        "health or social care",
+        "public health",
+        "archiving research and statistics"
+      ],
+      "default": "explicit consent"
     },
     "dataTypes": {
       "type": "array",
