@@ -6,7 +6,7 @@
   "type": "object",
   "description": "A joint data controller is an entity that jointly determines the purposes and the means of the processing of the personal data.",
   "properties": {
-    "legalPerson": {
+    "legalEntity": {
       "$ref": "./LegalEntity.json"
     },
     "legalAgreementPath": {
@@ -15,6 +15,6 @@
     }
   },
   "required": [
-    "legalPerson"
+    "legalEntity"
   ]
 }
