@@ -18,7 +18,7 @@
       "description": "Description of the legal basis of the sensitive data processing according to art. 9 and 10 GDPR",
       "enum": [
         "explicit consent",
-        "employment social security social protection",
+        "employment, social security and social protection",
         "vital interests",
         "non-for-profit bodies",
         "made public by data subject",
