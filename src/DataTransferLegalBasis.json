@@ -40,11 +40,6 @@
       "format": "uri",
       "example": "https://ec.europa.eu/info/sites/default/files/decision_on_the_adequate_protection_of_personal_data_by_the_united_kingdom_-_general_data_protection_regulation_en.pdf"
     },
-    "isConsent": {
-      "type": "boolean",
-      "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)",
-      "default": false
-    },
     "recipients": {
       "type": "object",
       "minProperties": 1,
@@ -79,7 +74,6 @@
   },
   "required": [
     "legalBasisCategory",
-    "isConsent",
     "recipients"
   ]
 }
