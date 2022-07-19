@@ -1,10 +1,10 @@
 {
-  "title": "DataSubjectType",
+  "title": "DataSubjectCategory",
   "x-stoplight": {
     "id": "8670ba79d90b1"
   },
   "type": "object",
-  "description": "description of the data subject type",
+  "description": "The category of individuals whose personal data is processed (ex : employees, prospects, clients)",
   "properties": {
     "name": {
       "type": "string",
@@ -13,7 +13,8 @@
     },
     "isChild": {
       "type": "boolean",
-      "description": "Provides information about the data subject being a child or not"
+      "description": "Provides information about the data subject being a child or not",
+      "default": false
     }
   },
   "required": [

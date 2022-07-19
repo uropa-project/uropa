@@ -23,11 +23,13 @@
         "physical"
       ],
       "description": "the type of security measure (technical, organizational or physical)"
+    },
+    "securityStandard": {
+      "type": "string"
     }
   },
   "required": [
     "name",
-    "description",
     "securityMeasureType"
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "description": "Place where the data is stored (location or geospatial scope)",
+  "x-stoplight": {
+    "id": "e12d157ed32c7"
+  },
+  "type": "object",
+  "title": "StorageLocation",
+  "properties": {
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "example": "/db/emailing-db/table/contacts/column/email",
+      "description": "Specifies the path to access where the data item is stored"
+    },
+    "dataCarrier": {
+      "$ref": "./DataCarrier.json"
+    },
+    "storageDurations": {
+      "type": "array",
+      "items": {
+        "$ref": "./StorageDuration.json"
+      }
+    }
+  },
+  "required": [
+    "storageDurations"
+  ]
+}

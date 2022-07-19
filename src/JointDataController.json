@@ -1,0 +1,20 @@
+{
+  "title": "JointDataController",
+  "x-stoplight": {
+    "id": "cdf8859275ec8"
+  },
+  "type": "object",
+  "description": "A joint data controller is an entity that jointly determines the purposes and the means of the processing of the personal data.",
+  "properties": {
+    "legalEntity": {
+      "$ref": "./LegalEntity.json"
+    },
+    "legalAgreementPath": {
+      "type": "string",
+      "description": "The path to the binding agreement with the joint controller"
+    }
+  },
+  "required": [
+    "legalEntity"
+  ]
+}

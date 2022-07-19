@@ -1,7 +1,7 @@
 {
   "title": "LegalBasis",
   "type": "object",
-  "description": "Reference to the reason in the law (e.g. the GDPR) that provides the basis for acting in a particular manner in regards to the personal data",
+  "description": "A legal basis is a reason used to justify processing of personal data. Applicable legal bases are defined by legislations (ex: art. 6 GDPR). ",
   "examples": [],
   "properties": {
     "legalBasisType": {
@@ -19,7 +19,7 @@
     "description": {
       "type": "string",
       "example": "Article L323-2 du Code de commerce sur la conversation des documents comptables",
-      "description": "Provides a description of the legal basis (including any additional legal text to refer to)"
+      "description": "Provides a description of the legal basis, including overrinding legitimate interests"
     },
     "source": {
       "type": "string",
@@ -36,6 +36,8 @@
   },
   "required": [
     "legalBasisType",
-    "description"
+    "source",
+    "startValidity",
+    "stopValidity"
   ]
 }

@@ -14,7 +14,7 @@
       "description": "Provides the status of the external organization regarding the controller"
     },
     "legalPerson": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
     "dataCategoriesDisclosed": {
       "type": "array",
@@ -25,8 +25,8 @@
     }
   },
   "required": [
-    "description",
     "organizationStatus",
-    "legalPerson"
+    "legalPerson",
+    "dataCategoriesDisclosed"
   ]
 }

@@ -17,6 +17,7 @@
     }
   },
   "required": [
-    "name"
+    "name",
+    "dataCategoriesDisclosed"
   ]
 }

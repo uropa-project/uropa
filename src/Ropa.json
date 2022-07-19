@@ -1,34 +1,43 @@
 {
-  "title": "ProcessingRecord",
+  "title": "Ropa",
+  "x-stoplight": {
+    "id": "3ff690c5644eb"
+  },
   "type": "object",
-  "description": "An inventory of the data processing according to article 30 GDPR. It must reflect the reality of the personal data processing, to keep track of the usage of personal data in the controller system.",
+  "description": "A ROPA is a record of processing activity that shall be maintained by the data controller according to article 30 GDPR. A ROPA is a full picture of the data processing, including its purpose, extent and management. ",
   "examples": [],
   "properties": {
     "name": {
-      "example": "Gestion de la trésorerie",
       "type": "string",
-      "description": "The name of the processing"
+      "description": "The name of the processing activity",
+      "example": "Newsletter management"
     },
     "internalId": {
       "type": "string",
-      "description": "The reference of the processing record"
+      "description": "The reference of the ROPA"
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "The date of the first creation of the ROPA",
+      "format": "date-time"
     },
     "updatedAt": {
       "type": "string",
-      "description": "The date of the last update of the ProcessingRecord",
-      "format": "date-time"
+      "description": "The date of the last update of the ROPA\n",
+      "format": "date-time",
+      "example": "28/06/2022"
     },
-    "legalPerson": {
-      "$ref": "./LegalPerson.json"
+    "dataController": {
+      "$ref": "./LegalEntity.json"
     },
     "representative": {
-      "$ref": "./LegalPerson.json"
+      "$ref": "./LegalEntity.json"
     },
-    "jointControllers": {
+    "jointDataControllers": {
       "type": "array",
-      "description": "A JointController is an entity that process the personal data and jointly determines the purposes and the means of the processing, according to article 26 GDPR",
+      "description": "Joint data controllers are a group of data controllers that jointly determine the purposes and means of processing of personal data",
       "items": {
-        "$ref": "./JointController.json"
+        "$ref": "./JointDataController.json"
       }
     },
     "purposes": {
@@ -81,6 +90,10 @@
         "$ref": "./DataTransfer.json"
       }
     },
+    "hasAutomatedDecisionMaking": {
+      "type": "boolean",
+      "default": false
+    },
     "dpia": {
       "$ref": "./Dpia.json"
     }
@@ -88,9 +101,10 @@
   "required": [
     "name",
     "updatedAt",
-    "legalPerson",
+    "dataController",
     "purposes",
     "recipients",
-    "securityMeasures"
+    "securityMeasures",
+    "hasAutomatedDecisionMaking"
   ]
 }

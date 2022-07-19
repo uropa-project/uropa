@@ -1,17 +1,34 @@
 {
   "title": "DataCategory",
   "type": "object",
-  "description": "High-Level description of the personal data processed that is aggregation of related DataTypes. For instance, the name and the first name are dataTypes and identity information is the dataCategory",
+  "description": "High-Level description of the personal data processed that encompasses one or several data types. Ex : the data category \"identity\" can encompass several data types such as first name, last name, birthdate etc. ",
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the data Category"
+      "description": "ex : identity, connection data, lifestyle etc."
     },
     "isSensitive": {
       "type": "boolean",
       "example": "normal",
       "description": "Specifies whether the dataCategory contains sensitive data",
       "default": false
+    },
+    "sensitiveLegalBasis": {
+      "type": "string",
+      "description": "Description of the legal basis of the sensitive data processing according to art. 9 and 10 GDPR",
+      "enum": [
+        "explicit consent",
+        "employment, social security and social protection",
+        "vital interests",
+        "non-for-profit bodies",
+        "made public by data subject",
+        "legal claims or judicial acts",
+        "reasons of subtantial public interest",
+        "health or social care",
+        "public health",
+        "archiving research and statistics"
+      ],
+      "default": "explicit consent"
     },
     "dataTypes": {
       "type": "array",
@@ -20,16 +37,19 @@
         "$ref": "./DataType.json"
       }
     },
-    "dataSubjectTypes": {
+    "dataSubjectCategories": {
       "type": "array",
+      "description": "The categories of individuals whose personal data is processed (ex : employees, prospects, clients)",
       "items": {
-        "$ref": "./DataSubjectType.json"
+        "$ref": "./DataSubjectCategory.json"
       }
     }
   },
   "required": [
     "name",
     "isSensitive",
-    "dataTypes"
+    "sensitiveLegalBasis",
+    "dataTypes",
+    "dataSubjectCategories"
   ]
 }

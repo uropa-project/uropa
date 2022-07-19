@@ -1,10 +1,10 @@
 {
   "title": "DataProcessor",
   "type": "object",
-  "description": "Information about the data processor that is a recipient of the data processed. Useful to manage authorisations, contracts and other legal instruments.",
+  "description": "A data processor processed personal data on behalf of the controller. Information on the data processor is useful to manage authorisations, contracts and other legal instruments.",
   "properties": {
-    "legalPerson": {
-      "$ref": "./LegalPerson.json"
+    "legalEntity": {
+      "$ref": "./LegalEntity.json"
     },
     "dataCategoriesDisclosed": {
       "type": "array",
@@ -19,6 +19,7 @@
     }
   },
   "required": [
-    "legalPerson"
+    "legalEntity",
+    "dataCategoriesDisclosed"
   ]
 }

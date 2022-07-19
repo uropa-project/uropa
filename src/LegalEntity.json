@@ -1,0 +1,38 @@
+{
+  "title": "LegalEntity",
+  "x-stoplight": {
+    "id": "323cb95303343"
+  },
+  "type": "object",
+  "description": "A legal entity is an entity (natural or legal person) that processes personal data. It can be a company, an organization, an individual etc. ",
+  "properties": {
+    "name": {
+      "type": "string",
+      "example": "CODE IS LAW",
+      "description": "The name of the entity"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "example": "amazon@gmail.com",
+      "description": "The contact email of the entity"
+    },
+    "registrationNumber": {
+      "type": "string"
+    },
+    "address": {
+      "$ref": "./Address.json"
+    },
+    "ceo": {
+      "$ref": "./Ceo.json"
+    },
+    "dpo": {
+      "$ref": "./Dpo.json"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "address"
+  ]
+}
