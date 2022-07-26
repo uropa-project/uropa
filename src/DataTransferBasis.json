@@ -1,9 +1,12 @@
 {
-  "title": "DataTransferLegalBasis",
+  "title": "DataTransferBasis",
+  "x-stoplight": {
+    "id": "ffc0b8a31de06"
+  },
   "type": "object",
   "description": "classification that pertains to how an atomic piece of data must be treated in order to be compliant with GDPR",
   "properties": {
-    "legalBasisCategory": {
+    "dataTransferBasisCategory": {
       "type": "string",
       "enum": [
         "adequacy decision",
@@ -13,7 +16,7 @@
       "example": "appropriate safeguards",
       "description": "The type of legal basis used to transfer data outside the EU according to the GDPR"
     },
-    "legalBasisType": {
+    "dataTransferBasisType": {
       "type": "string",
       "enum": [
         "legally binding and enforceable instrument",
@@ -73,7 +76,7 @@
     }
   },
   "required": [
-    "legalBasisCategory",
+    "dataTransferBasisCategory",
     "recipients"
   ]
 }
