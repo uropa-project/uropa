@@ -92,7 +92,8 @@
     },
     "hasAutomatedDecisionMaking": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "description": "When true, it informs that the processing results in a decision based solely on automated processing that produces legal effects concerning the data subject or similarly significantly affects the data subject. In this case, article 22 GDPR applies. "
     },
     "dpia": {
       "$ref": "./Dpia.json"
