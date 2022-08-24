@@ -12,7 +12,7 @@
       "$ref": "./Country.json"
     },
     "dataTransferLegalBasis": {
-      "$ref": "./DataTransferLegalBasis.json"
+      "$ref": "./DataTransferBasis.json"
     }
   },
   "required": [
