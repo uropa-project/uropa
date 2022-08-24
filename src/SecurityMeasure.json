@@ -25,7 +25,8 @@
       "description": "the type of security measure (technical, organizational or physical)"
     },
     "securityStandard": {
-      "type": "string"
+      "type": "string",
+      "description": "List of any security standard already put in place for the processing (ex: ISO/IEC 27001)"
     }
   },
   "required": [
