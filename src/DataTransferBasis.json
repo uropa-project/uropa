@@ -1,9 +1,12 @@
 {
-  "title": "DataTransferLegalBasis",
+  "title": "DataTransferBasis",
+  "x-stoplight": {
+    "id": "ffc0b8a31de06"
+  },
   "type": "object",
   "description": "classification that pertains to how an atomic piece of data must be treated in order to be compliant with GDPR",
   "properties": {
-    "legalBasisType": {
+    "dataTransferBasisCategory": {
       "type": "string",
       "enum": [
         "adequacy decision",
@@ -13,21 +16,32 @@
       "example": "appropriate safeguards",
       "description": "The type of legal basis used to transfer data outside the EU according to the GDPR"
     },
-    "description": {
+    "dataTransferBasisType": {
       "type": "string",
-      "description": "Describes the legal basis of the transfer",
-      "example": "standard contractual clauses"
+      "enum": [
+        "legally binding and enforceable instrument",
+        "binding corporate rules",
+        "standard data protection clauses",
+        "approved code of conduct",
+        "approved certification mechanism",
+        "authorised contractual clauses",
+        "authorised provisions inserted into administrative arrangements",
+        "consent",
+        "contract with the data subject",
+        "contract in the interest of the data subject",
+        "important reasons of public interest",
+        "establishement exercise or defense of legal claims",
+        "protection of vital interest",
+        "transfer made from a public register",
+        "ad hoc transfer",
+        "other"
+      ]
     },
     "proofUrl": {
       "type": "string",
       "description": "Links to the proof of the data transfer legal basis (url or internal path)",
       "format": "uri",
       "example": "https://ec.europa.eu/info/sites/default/files/decision_on_the_adequate_protection_of_personal_data_by_the_united_kingdom_-_general_data_protection_regulation_en.pdf"
-    },
-    "isConsent": {
-      "type": "boolean",
-      "description": "Specifies if the transfer legal basis is consent (article 49 GDPR)",
-      "default": false
     },
     "recipients": {
       "type": "object",
@@ -62,9 +76,7 @@
     }
   },
   "required": [
-    "legalBasisType",
-    "description",
-    "isConsent",
+    "dataTransferBasisCategory",
     "recipients"
   ]
 }

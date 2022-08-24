@@ -17,11 +17,13 @@
     },
     "stopDate": {
       "type": "string",
-      "description": "The date of the DPIA or the last update of the DPIA"
+      "description": "The date of the DPIA or the last update of the DPIA",
+      "format": "date-time"
     },
     "hasPriorConsultation": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "description": "Informs whether the processing has been subject to a prior consultation obligation according to article 36 GDPR"
     }
   },
   "required": [

@@ -15,6 +15,10 @@
     },
     "countdown": {
       "$ref": "./Countdown.json"
+    },
+    "triggerType": {
+      "type": "string",
+      "default": "no countdown"
     }
   },
   "required": [

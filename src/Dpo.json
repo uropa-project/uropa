@@ -19,7 +19,6 @@
     }
   },
   "required": [
-    "personalInformation",
-    "address"
+    "personalInformation"
   ]
 }
