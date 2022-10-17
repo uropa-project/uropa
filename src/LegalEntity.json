@@ -26,8 +26,8 @@
     "ceo": {
       "$ref": "./Ceo.json"
     },
-    "dpo": {
-      "$ref": "./Dpo.json"
+    "dataProtectionOfficer": {
+      "$ref": "./DataProtectionOfficer.json"
     }
   },
   "required": [
