@@ -4,7 +4,7 @@
     "id": "9ac0b8c512956"
   },
   "type": "object",
-  "title": "DataCarrier",
+  "title": "DataStorageTechnology",
   "properties": {
     "support": {
       "type": "string",
