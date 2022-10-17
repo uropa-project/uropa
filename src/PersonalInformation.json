@@ -1,7 +1,7 @@
 {
-  "title": "PersonalInformation",
+  "title": "NaturalPerson",
   "type": "object",
-  "description": "Informations about a physical person.",
+  "description": "Informations about a human.",
   "examples": [],
   "x-internal": true,
   "properties": {
