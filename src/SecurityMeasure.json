@@ -1,20 +1,20 @@
 {
-  "title": "SecurityMeasure",
+  "title": "TechnicalOrganisationalMeasure",
   "type": "object",
-  "description": "Description of the security measure applying to the processing",
+  "description": "Description of the technical or organisational measure applying to the processing",
   "examples": [],
   "properties": {
     "name": {
       "type": "string",
       "example": "Reverse proxy",
-      "description": "the name of the security measure"
+      "description": "the name of the technical or organisational measure"
     },
     "description": {
       "type": "string",
       "description": "The description of the security measure",
       "example": "DDOS mitigation technical asset"
     },
-    "securityMeasureType": {
+    "technicalOrganisationalMeasureType": {
       "type": "string",
       "example": "technical",
       "enum": [
