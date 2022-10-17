@@ -76,11 +76,11 @@
         }
       }
     },
-    "securityMeasures": {
+    "technicalOrganisationalMeasures": {
       "type": "array",
-      "description": "The list of the security measures adopted by the controller to ensure the confidentiality, integrity and availability of the processed personal data",
+      "description": "The list of the technical and organisational measures adopted by the controller to ensure the confidentiality, integrity and availability of the processed personal data",
       "items": {
-        "$ref": "./SecurityMeasure.json"
+        "$ref": "./TechnicalOrganisationalMeasure.json"
       }
     },
     "dataTransfers": {
