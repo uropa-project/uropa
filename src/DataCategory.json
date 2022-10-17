@@ -26,7 +26,8 @@
         "reasons of subtantial public interest",
         "health or social care",
         "public health",
-        "archiving research and statistics"
+        "archiving research and statistics",
+        "control of official authority"
       ],
       "default": "explicit consent"
     },
