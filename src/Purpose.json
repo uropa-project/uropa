@@ -25,6 +25,10 @@
       "items": {
         "$ref": "./DataCategory.json"
       }
+    },
+    "frameworkRef": {
+      "type": "string",
+      "description": "Provides information about the matching of this purpose with a framework taxonomy under the following format : <frameworkname>-<uniqueId>"
     }
   },
   "required": [
