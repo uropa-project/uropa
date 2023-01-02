@@ -15,6 +15,10 @@
       "type": "boolean",
       "description": "Provides information about the data subject being a child or not",
       "default": false
+    },
+    "frameworkRef": {
+      "type": "string",
+      "description": "Provides information about the matching of this data subject category with a framework taxonomy under the following format : <frameworkname>-<uniqueId>"
     }
   },
   "required": [
