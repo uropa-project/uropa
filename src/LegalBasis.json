@@ -32,6 +32,10 @@
     },
     "stopValidity": {
       "$ref": "./EventType.json"
+    },
+    "frameworkRef": {
+      "type": "string",
+      "description": "Provides information about the matching of this legal basis with a framework taxonomy under the folowing format : <frameworkname>-<uniqueId>"
     }
   },
   "required": [
