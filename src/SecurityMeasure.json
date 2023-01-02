@@ -1,13 +1,13 @@
 {
-  "title": "TechnicalOrganisationalMeasure",
+  "title": "SecurityMeasure",
   "type": "object",
-  "description": "Description of the technical or organisational measure applying to the processing",
+  "description": "Description of the security measure applying to the processing",
   "examples": [],
   "properties": {
     "name": {
       "type": "string",
       "example": "Reverse proxy",
-      "description": "the name of the technical or organisational measure"
+      "description": "the name of the security measure"
     },
     "description": {
       "type": "string",
@@ -27,10 +27,13 @@
     "securityStandard": {
       "type": "string",
       "description": "List of any security standard already put in place for the processing (ex: ISO/IEC 27001)"
+    },
+    "frameworkRef": {
+      "type": "string",
+      "description": "Provides information about the matching of this security measure with a framework taxonomy under the following format : <frameworkname>-<uniqueId>"
     }
   },
   "required": [
-    "name",
-    "securityMeasureType"
+    "name"
   ]
 }
